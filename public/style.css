@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    opacity: 100;
+    height: 11vmin;
+    width: 100%;
+    background-color: #FF6F00;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+
+.logo img {
+    height: 65px;
+    width: auto;
+    position: relative;
+    top: 0px;
+    margin-top: 0;
+}
+
+.name {
+    font-size: 43px;
+    height: 25vmin;
+    width: 45%;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 4px;
+    color: #212529;
+    cursor: pointer;
+}
+
+
+.nav-list {
+    height: 100%;
+    width: 50%;
+
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav-items li {
+    list-style: none;
+    font-weight: 800;
+}
+
+.nav-items li:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    transform: scale(1.2, 1.2);
+}
+
+.nav-list li button {
+    border: none;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+
+}
+
+.dropdown-btn {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 8px;
+    height: 45px;
+    width: 70px;
+    font-size: 12px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+.home-page {
+    width: 100%;
+    height: 30rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFF8E1;
+    overflow: hidden;
+}
+
+.homeSec1 {
+    width: 60%;
+    height: 30rem;
+    line-height: 32px;
+    font-family: "Alice", serif;
+    padding: 20px;
+    font-weight: 500;
+    color: #4E342E;
+}
+
+.homeSec2 {
+    width: 40%;
+    height: 30rem;
+}
+
+.slideshowHome {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 70px;
+}
+
+.slide-trackHome {
+    display: flex;
+    width: calc(500px * 6);
+    animation: slide 30s infinite;
+}
+
+.slide {
+    width: 500px;
+    height: 380px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-500px);
+    }
+
+    40% {
+        transform: translateX(-1000px);
+    }
+
+    60% {
+        transform: translateX(-1500px);
+    }
+
+    80% {
+        transform: translateX(-2000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.sec {
+    width: 50%;
+    min-height: 200px;
+    background-color: #FFF8E1;
+}
+
+.sweetspro-con {
+    width: 100%;
+    height: 126rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dairypro-con {
+    width: 100%;
+    height: 100rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product img {
+    height: 25rem;
+    width: 80%;
+    margin-left: 60px;
+    margin-top: 20PX;
+    object-fit: cover;
+}
+
+.producttxt {
+    height: 4em;
+    width: 80%;
+    margin-left: 60px;
+    text-align: center;
+    font-family: "Alice", serif;
+    font-weight: 1000;
+    margin-top: 10px;
+    color: #4E342E;
+}
+
+.contactus {
+    width: 100%;
+    height: 30rem;
+    box-sizing: border-box;
+    background-color: #FFF8E1;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.contactlinks {
+    height: 20rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.contact-icon {
+    height: 5rem;
+    width: 17rem;
+    border: 1px solid #96705B;
+    border-radius: 10px;
+    display: flex;
+    font-family: "Alice", serif;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.contact-icon:hover .whatsapp-head {
+    color: green;
+}
+
+.contact-icon:hover .email-head {
+    color: navy;
+}
+
+.icon {
+    margin: 8px 6px 0px 8px;
+    width: 12%;
+}
+
+.icontext {
+    margin-top: 12px;
+    margin-left: 8px;
+    width: 88%;
+}
+
+.icontext-head {
+    font-weight: 1000;
+    width: 100%;
+    height: 2rem;
+    color: black;
+}
+
+.icontext-body {
+    color: #96705B;
+    font-size: 14px;
+}
+
+.contactform {
+    height: 20rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform h2 {
+    font-family: "Alice", sans-serif;
+}
+
+.signup {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 20rem;
+    border: 1px solid #96705B;
+    border-radius: 3px;
+}
+
+.signupsubmit {
+    width: 5rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 4px;
+    border: none;
+}
+
+.signupsubmit:hover {
+    background-color: #A8D5BA;
+    color: whitesmoke;
+    border: none;
+}
+
+.foot {
+    height: 9vmin;
+    width: 100%;
+    background-color: #FF6F00;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.fixlogo img {
+    opacity: 10000px;
+    height: 5rem;
+    width: auto;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* @media only screen and (min-width : 360px) {
+    .nav {
+        height: 15vmin;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .name {
+        font-size: 20px;
+        width: 90%;
+        height: 100%;
+        padding-right: 15px;
+    }
+
+    .home-page {
+        height: 90rem;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .homeSec1 {
+        width: 100%;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+
+    .homeSec2 {
+        height: 378px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .slideshowHome {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .dropdown-content {
+        right: 10px;
+    }
+
+    .dropdown {
+        position: static;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        right: 10px;
+    }
+
+}
+/* @media only screen and (min-width: 360px){
+    .slideshowHome {
+        width: 100%;
+        margin: 0;
+    }
+    .name{
+        font-size: 24px;
+    }
+
+} */ 
